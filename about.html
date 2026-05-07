@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mergim Hasani Design Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed" id="mainNav">
+        <div class="container px-3">
+            <a class="navbar-brand" href="index.html">Mergim Hasani</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+
+                    <li class="nav-item"><a class="nav-link" href="index.html">Portfolio</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+               
+            </div>
+
+            <div class="text-center">
+                <img draggable="false" src="assets/img/about/5.jpg" class="rounded-circle mb-3 "
+                    style="width:150px; height:150px; object-fit:cover;" alt="...">
+            </div>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <p class="">Ich bin Designer mit Fokus auf Brand Identity und visuelle Systeme.
+Ich entwickle Designlösungen, die nicht nur ästhetisch überzeugen, sondern Marken klar, konsistent und wiedererkennbar positionieren.</p>
+
+                <p>Mein Schwerpunkt liegt in der Entwicklung visueller Systeme, die medienübergreifend funktionieren – von Packaging und Digital Design bis hin zu Social Media.</p>
+
+                <p>Dabei arbeite ich daran, Marken verständlicher, strukturierter und visuell konsistenter zu gestalten.</p>
+            </div>
+
+
+        </div>
+    </section>
+    <script>
+    // Disable right click
+    document.addEventListener('contextmenu', e => {
+        e.preventDefault();
+    });
+
+    // Disable drag images
+    document.addEventListener('dragstart', e => {
+        e.preventDefault();
+    });
+
+    // Disable copy
+    document.addEventListener('copy', e => {
+        e.preventDefault();
+    });
+
+    // Disable common shortcuts
+    document.addEventListener('keydown', e => {
+
+        // Ctrl+C
+        if (e.ctrlKey && e.key.toLowerCase() === 'c') {
+            e.preventDefault();
+        }
+
+        // Ctrl+S
+        if (e.ctrlKey && e.key.toLowerCase() === 's') {
+            e.preventDefault();
+        }
+
+        // Ctrl+U
+        if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+            e.preventDefault();
+        }
+
+        // F12
+        if (e.key === 'F12') {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+
+</html>
