@@ -131,8 +131,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
-h1, .h1 {
-  font-size: calc(4rem + 1.5vw);
+/* h1, .h1 {
+  font-size: calc(4rem + 1.5vw); */
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -10811,7 +10811,7 @@ p {
 .page-section {
   padding-left: 10%;
   padding-right: 10%;
-  padding: 0rem;
+  padding: 1rem;
   /* padding: 6rem 0; */
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
