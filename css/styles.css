@@ -100,7 +100,8 @@ img {
 
 /* Disable text selection */
 body {
-    user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 body {
   margin: 0;

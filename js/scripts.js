@@ -50,5 +50,22 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
+document.addEventListener("contextmenu", function(e) {
+  e.preventDefault();
+});
+document.addEventListener("keydown", function(e) {
+  if (
+    e.ctrlKey && (e.key === "c" || e.key === "s" || e.key === "u") ||
+    e.key === "F12"
+  ) {
+    e.preventDefault();
+  }
+});
+document.addEventListener("visibilitychange", function() {
+  if (document.hidden) {
+    document.body.style.filter = "blur(10px)";
+  } else {
+    document.body.style.filter = "none";
+  }
+});
 });
