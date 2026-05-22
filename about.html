@@ -44,8 +44,77 @@
             <div class="text-center">
                
             </div>
+            <style>
+.about-wrapper{
+    display:flex;
+    align-items:flex-start;
+    gap:40px;
+    max-width:1000px;
+    margin:0 auto;
+}
 
-            <div class="text-center">
+.about-image img{
+    width:400px;
+    height:400px;
+    object-fit:cover;
+    border-radius:0;
+    display:block;
+}
+
+.about-text{
+    flex:1;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+    .about-wrapper{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .about-image img{
+        width:400px;
+        height:400px;
+    }
+}
+</style>
+
+
+<div class="about-wrapper">
+
+    <!-- FOTO -->
+    <div class="about-image">
+        <img 
+            draggable="false"
+            src="assets/img/about/5.jpg"
+            alt="Mergim Hasani"
+        >
+    </div>
+
+    <!-- TEKSTI -->
+    <div class="about-text">
+
+        <p>
+            Ich bin Mergim Hasani, Graphic & Digital Designer mit Fokus auf Brand Identity und visuelle Systeme.
+        </p>
+
+        <p>
+            Ich entwickle Designlösungen für Unternehmen und Startups, die nicht nur ästhetisch überzeugen, sondern strategisch wirken.
+            Mein Schwerpunkt liegt auf dem Aufbau konsistenter visueller Identitäten — von der ersten Konzeptidee bis zur finalen Anwendung über alle Kanäle hinweg.
+        </p>
+
+        <p>
+            Ich arbeite an der Schnittstelle von Struktur und Ästhetik: Jedes Projekt beginnt mit einem klaren Verständnis der Marke, ihrer Zielgruppe und ihres Marktkontexts.
+            Das Ergebnis sind visuelle Systeme, die medienübergreifend funktionieren — ob Packaging, Digital, Print oder Social Media.
+        </p>
+
+    </div>
+
+</div>
+
+            <!-- <div class="text-center">
                 <img draggable="false" src="assets/img/about/5.jpg" class="rounded-circle mb-3 "
                     style="width:150px; height:150px; object-fit:cover;" alt="...">
             </div>
@@ -56,19 +125,14 @@ Mein Schwerpunkt liegt auf dem Aufbau konsistenter visueller Identitäten — vo
 
 <p>Ich arbeite an der Schnittstelle von Struktur und Ästhetik: Jedes Projekt beginnt mit einem klaren Verständnis der Marke, ihrer Zielgruppe und ihres Marktkontexts. 
     Das Ergebnis sind visuelle Systeme, die medienübergreifend funktionieren — ob Packaging, Digital, Print oder Social Media.</p>
-                <!-- <p class="">Ich bin Designer mit Fokus auf Brand Identity und visuelle Systeme.
-Ich entwickle Designlösungen, die nicht nur ästhetisch überzeugen, sondern Marken klar, konsistent und wiedererkennbar positionieren.</p>
-
-                <p>Mein Schwerpunkt liegt in der Entwicklung visueller Systeme, die medienübergreifend funktionieren – von Packaging und Digital Design bis hin zu Social Media.</p>
-
-                <p>Dabei arbeite ich daran, Marken verständlicher, strukturierter und visuell konsistenter zu gestalten.</p> -->
-            </div>
+               
+            </div> -->
 
 
         </div>
     </section>
     <script>
-    // Disable right click
+    // // Disable right click
     document.addEventListener('contextmenu', e => {
         e.preventDefault();
     });
@@ -106,7 +170,7 @@ Ich entwickle Designlösungen, die nicht nur ästhetisch überzeugen, sondern Ma
             e.preventDefault();
         }
     });
-</script>
+// </script>
 </body>
 
 </html>
