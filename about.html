@@ -7,16 +7,93 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Mergim Hasani Design Portfolio</title>
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
     <link href="css/styles.css" rel="stylesheet" />
 
+    <style>
+        /* 1. PRAPAVIJA DHE TEKSTI I BARDHË PËR TË GJITHË FAQEN */
+        body, .page-section, .modal-content, footer {
+            background-color: #2b2b2b !important;
+            color: #ffffff !important;
+        }
+
+        /* 2. EMRI "MERGIM HASANI" LART MAJAS (BËHET I BARDHË) */
+        .navbar-brand, #mainNav .navbar-brand {
+            color: #ffffff !important;
+        }
+        .navbar-brand:hover, #mainNav .navbar-brand:hover {
+            color: #00a8a8 !important; /* Kur i afrohet miu, bëhet Turkish e ndritshme */
+        }
+
+        /* 3. LINKU I MENUSË PORTFOLIO (BËHET I BARDHË NË PC) */
+        .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .nav-link {
+            color: #ffffff !important;
+        }
+        .navbar-nav .nav-item .nav-link:hover, 
+        .navbar-nav .nav-item .nav-link.active,
+        #mainNav .navbar-nav .nav-item .nav-link:hover {
+            color: #00a8a8 !important;
+        }
+
+        /* 4. RREGULLIMI PËR TELEFON (FSHEHJA E PORTFOLIOS) */
+        @media (max-width: 991px) {
+            /* Fsheh të gjithë pjesën e linkut Portfolio në telefon */
+            .navbar-collapse {
+                display: none !important;
+            }
+            /* Nëse dëshiron që emri të jetë i vijëzuar bukur në qendër në telefon, shto rreshtin poshtë: */
+            .navbar {
+                justify-content: center !important;
+            }
+        }
+
+        /* 5. RREGULLIMI I TEKSTIT BRENDA FAQES ABOUT */
+        .about-text p {
+            color: #ffffff !important;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* STILET STRUKTURORE TË FAQES ABOUT */
+        .about-wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+
+        .about-image img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 0;
+            display: block;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        /* MOBILE RESPONSIVE PËR FOTON DHE TEKSTIN */
+        @media (max-width:768px){
+            .about-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .about-image img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,153 +101,55 @@
         <div class="container px-3">
             <a class="navbar-brand" href="index.html">Mergim Hasani</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ms-1"></i>
-            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-
+                <ul class="navbar-nav text-uppercase ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Portfolio</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- About-->
-    <section class="page-section" id="about">
+
+    <section class="page-section" id="about" style="padding-top: 50px;">
         <div class="container">
-            <div class="text-center">
-               
+            
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img 
+                        draggable="false"
+                        src="assets/img/about/5.jpg"
+                        alt="Mergim Hasani"
+                    >
+                </div>
+
+                <div class="about-text">
+                    <p>
+                        Ich bin Mergim Hasani, Graphic & Digital Designer mit Fokus auf Brand Identity und visuelle Systeme.
+                    </p>
+                    <p>
+                        Ich entwickle Designlösungen für Unternehmen und Startups, die nicht nur ästhetisch überzeugen, sondern strategisch wirken.
+                        Mein Schwerpunkt liegt auf dem Aufbau konsistenter visueller Identitäten — von der ersten Konzeptidee bis zur finalen Anwendung über alle Kanäle hinweg.
+                    </p>
+                    <p>
+                        Ich arbeite an der Schnittstelle von Struktur und Ästhetik: Jedes Projekt beginnt mit einem klaren Verständnis der Marke, ihrer Zielgruppe und ihres Marktkontexts.
+                        Das Ergebnis sind visuelle Systeme, die medienübergreifend funktionieren — ob Packaging, Digital, Print oder Social Media.
+                    </p>
+                </div>
             </div>
-            <style>
-.about-wrapper{
-    display:flex;
-    align-items:flex-start;
-    gap:40px;
-    max-width:1000px;
-    margin:0 auto;
-}
-
-.about-image img{
-    width:400px;
-    height:400px;
-    object-fit:cover;
-    border-radius:0;
-    display:block;
-}
-
-.about-text{
-    flex:1;
-}
-
-/* MOBILE */
-@media (max-width:768px){
-
-    .about-wrapper{
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-    }
-
-    .about-image img{
-        width:400px;
-        height:400px;
-    }
-}
-</style>
-
-
-<div class="about-wrapper">
-
-    <!-- FOTO -->
-    <div class="about-image">
-        <img 
-            draggable="false"
-            src="assets/img/about/5.jpg"
-            alt="Mergim Hasani"
-        >
-    </div>
-
-    <!-- TEKSTI -->
-    <div class="about-text">
-
-        <p>
-            Ich bin Mergim Hasani, Graphic & Digital Designer mit Fokus auf Brand Identity und visuelle Systeme.
-        </p>
-
-        <p>
-            Ich entwickle Designlösungen für Unternehmen und Startups, die nicht nur ästhetisch überzeugen, sondern strategisch wirken.
-            Mein Schwerpunkt liegt auf dem Aufbau konsistenter visueller Identitäten — von der ersten Konzeptidee bis zur finalen Anwendung über alle Kanäle hinweg.
-        </p>
-
-        <p>
-            Ich arbeite an der Schnittstelle von Struktur und Ästhetik: Jedes Projekt beginnt mit einem klaren Verständnis der Marke, ihrer Zielgruppe und ihres Marktkontexts.
-            Das Ergebnis sind visuelle Systeme, die medienübergreifend funktionieren — ob Packaging, Digital, Print oder Social Media.
-        </p>
-
-    </div>
-
-</div>
-
-            <!-- <div class="text-center">
-                <img draggable="false" src="assets/img/about/5.jpg" class="rounded-circle mb-3 "
-                    style="width:150px; height:150px; object-fit:cover;" alt="...">
-            </div>
-            <div style="max-width: 700px; margin: 0 auto;">
-                <p>Ich bin Mergim Hasani, Graphic & Digital Designer mit Fokus auf Brand Identity und visuelle Systeme.</p>
-<p>Ich entwickle Designlösungen für Unternehmen und Startups, die nicht nur ästhetisch überzeugen, sondern strategisch wirken.
-Mein Schwerpunkt liegt auf dem Aufbau konsistenter visueller Identitäten — von der ersten Konzeptidee bis zur finalen Anwendung über alle Kanäle hinweg.</p>
-
-<p>Ich arbeite an der Schnittstelle von Struktur und Ästhetik: Jedes Projekt beginnt mit einem klaren Verständnis der Marke, ihrer Zielgruppe und ihres Marktkontexts. 
-    Das Ergebnis sind visuelle Systeme, die medienübergreifend funktionieren — ob Packaging, Digital, Print oder Social Media.</p>
-               
-            </div> -->
-
 
         </div>
     </section>
-    <script>
-    // // Disable right click
-    document.addEventListener('contextmenu', e => {
-        e.preventDefault();
-    });
 
-    // Disable drag images
-    document.addEventListener('dragstart', e => {
-        e.preventDefault();
-    });
-
-    // Disable copy
-    document.addEventListener('copy', e => {
-        e.preventDefault();
-    });
-
-    // Disable common shortcuts
-    document.addEventListener('keydown', e => {
-
-        // Ctrl+C
-        if (e.ctrlKey && e.key.toLowerCase() === 'c') {
-            e.preventDefault();
-        }
-
-        // Ctrl+S
-        if (e.ctrlKey && e.key.toLowerCase() === 's') {
-            e.preventDefault();
-        }
-
-        // Ctrl+U
-        if (e.ctrlKey && e.key.toLowerCase() === 'u') {
-            e.preventDefault();
-        }
-
-        // F12
-        if (e.key === 'F12') {
-            e.preventDefault();
-        }
-    });
-// </script>
+    <!-- <script>
+        document.addEventListener('contextmenu', e => { e.preventDefault(); });
+        document.addEventListener('dragstart', e => { e.preventDefault(); });
+        document.addEventListener('copy', e => { e.preventDefault(); });
+        document.addEventListener('keydown', e => {
+            if (e.ctrlKey && e.key.toLowerCase() === 'c') e.preventDefault();
+            if (e.ctrlKey && e.key.toLowerCase() === 's') e.preventDefault();
+            if (e.ctrlKey && e.key.toLowerCase() === 'u') e.preventDefault();
+            if (e.key === 'F12') e.preventDefault();
+        });
+    </script> -->
 </body>
 
 </html>

@@ -7,20 +7,66 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Mergim Hasani Design Portfolio</title>
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
 
+   <style>
+        /* 1. PRAPAVIJA DHE TEKSTI */
+        body, .page-section, .modal-content, footer {
+            background-color: #2b2b2b !important;
+            color: #ffffff !important;
+        }
+
+        /* 2. EMRI "MERGIM HASANI" LART MAJAS */
+        .navbar-brand, #mainNav .navbar-brand {
+            color: #ffffff  !important;
+        }
+        .navbar-brand:hover, #mainNav .navbar-brand:hover {
+            color: #00a8a8 !important;
+        }
+
+        /* 3. LINKET E MENUSË (PORTFOLIO / ABOUT) */
+        .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .nav-link {
+            color: #ffffff !important;
+        }
+        .navbar-nav .nav-item .nav-link:hover, 
+        .navbar-nav .nav-item .nav-link.active,
+        #mainNav .navbar-nav .nav-item .nav-link:hover {
+            color: #00a8a8 !important;
+        }
+
+        /* 4. EFEKTI HOVER MBI FOTO (AJO QË ISHTE E VERDHË) */
+        .portfolio-item .portfolio-link .portfolio-hover,
+        [id^="portfolio"] .portfolio-hover {
+            background: rgb(0, 139, 139) !important;
+        }
+
+        /* 5. BUTONAT KRYESORË (SI CLOSE PROJECT) */
+        .btn-primary, .btn-xl {
+            background-color: #008b8b !important;
+            border-color: #008b8b !important;
+            color: #ffffff !important;
+        }
+        .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+            background-color: #00a8a8 !important;
+            border-color: #00a8a8 !important;
+        }
+
+        /* 6. RREGULLIMI I TEKSTEVE NDihmëse */
+        .text-muted {
+            color: #dddada !important;
+        }
+        .text, h1, h5, h6, .portfolio-caption-heading {
+            color: #ffffff !important;
+        }
+    </style>
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
     <nav class="navbar navbar-expand-lg fixed" id="mainNav">
         <div class="container px-3">
             <a class="navbar-brand" href="#page-top">Mergim Hasani</a>
@@ -40,18 +86,15 @@
             </div>
         </div>
     </nav>
-    <!-- Portfolio Grid-->
     <section class="page-section" id="portfolio">
         <div style="display:flex; width:100%;">
             <div class="container-fluid">
           
                 <div class="row g-0">
                     <div class="col-12 col-md-6">
-                        <!-- Portfolio item 1-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
-                                    <!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> --> 
                                      <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Buon</div>
                                 <div class="portfolio-caption-subheading text-muted">Brand Identity System</div>
@@ -63,11 +106,9 @@
                         </div>
                     </div>                   
                     <div class="col-12 col-md-6">
-                        <!-- Portfolio item 2-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
-                                    <!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> -->   
                                      <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Hidrotermika</div>
                                 <div class="portfolio-caption-subheading text-muted">Brand Identity Redesign
@@ -80,11 +121,9 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <!-- Portfolio item 3-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
-                                    <!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> -->
                                      <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Aquora</div>
                                 <div class="portfolio-caption-subheading text-muted">Brand Identity System for a
@@ -97,11 +136,9 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <!-- Portfolio item 4-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
-                                    <!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> -->
                                     <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">PureBee</div>
                                 <div class="portfolio-caption-subheading text-muted">Brand Identity & Packaging Design</div>
@@ -116,24 +153,15 @@
             </div>
 
     </section>
-    <!-- Footer-->
     <footer class="footer py-4">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <!-- <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2026</div> -->
-                <!-- <div class="col-lg-4 my-3 my-lg-0 text-center">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Instagram"><i
-                            class="fab fa-instagram"></i></a> -->
-                    <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> -->
-                    <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a> -->
                 </div>
                 
             </div>
         </div>
     </footer>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio item 1 modal popup--><div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
@@ -142,15 +170,12 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
                                 <img class="img-fluid d-block mx-auto" draggable="false" src="assets/img/portfolio/1.jpg" alt="..." />
                                 <div class="textportfolio">
                                     <h1 class="text">Buon</h1>
                                     <p class="item-intro text-muted">Brand Identity System</p>
-                                    <!-- <h5 class="text">Projektübersicht</h5> -->
                                     <p>BUON ist ein Brand-Identity-Projekt für eine Kaffeemarke mit Fokus auf ein klares, 
                                         skalierbares und konsistentes visuelles System über physische und digitale Anwendungen hinweg.</p>
-                                    <!-- <h5 class="text">Zielsetzung</h5> -->
                                     <p>Der Kaffeemarkt ist visuell stark gesättigt. Viele Marken nutzen ähnliche dunkle Farbtöne und traditionelle Gestaltungselemente.
 Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar differenziert und gleichzeitig einfach und reduziert bleibt.
                                     <h6 class="text">Ansatz</h6>
@@ -197,7 +222,6 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
         </div>
     </div>
    
-    <!-- Portfolio item 2 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -207,18 +231,14 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
-
                                 <img class="img-fluid d-block mx-auto" draggable="false" src="assets/img/portfolio/2.jpg" alt="..." />
                                 <div class="textportfolio">
                                     <h1 class="text">Hidrotermika</h1>
                                     <p class="item-intro text-muted">Brand Identity Redesign</p>
-                                    <!-- <h5 class="text">Projektübersicht</h5> -->
                                     <p>Hidrotermika Sistem ist ein Unternehmen, das sich auf Lösungen im Bereich
                                         Heizungs- und Wasserversorgung spezialisiert hat. Seit 1997 bietet das
                                         Unternehmen hochwertige deutsche und italienische Komponenten für Heizungs-,
                                         Wasserversorgungs- und HLK-Systeme (Heizung, Lüftung und Klimatechnik) an.</p>
-                                    <!-- <h5 class="text">Zielsetzung</h5> -->
                                     <p>Dieses Projekt umfasste die vollständige Neugestaltung der visuellen Identität
                                         mit dem Ziel, das Erscheinungsbild des Unternehmens zu modernisieren und seine
                                         Marktpräsenz zu stärken. Der gestalterische Ansatz basiert auf der Kombination
@@ -236,9 +256,6 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
                                         <li>Gestaltung von Printmaterialien</li>
                                         <li>Entwicklung von Markenanwendungen</li>
                                     </ul>
-                                    <!-- <h5 class="text">Markenidentität</h5>
-                                    <p>Es wurde eine saubere und moderne visuelle Identität entwickelt, mit warmen Farbtönen, 
-                                        die die Natur und das Honigprodukt widerspiegeln.</p> -->
                                     <h5 class="text">Anwendungsbereiche der Marke</h5>
                                     <p>Die Markenidentität wurde auf verschiedenen Marketingmaterialien angewendet:</p>
                                     <h6 class="text">Geschäftsausstattung:</h6>
@@ -258,9 +275,6 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
                                         <li>Etiketten</li>
                                         <li>Tragetasche</li>
                                     </ul>
-                                    <!-- <h5 class="text">Ergebnis</h5>
-                                    <p>Die Marke erzeugt eine starke visuelle Präsenz und kommuniziert die natürliche 
-                                        Qualität des Produkts klar und modern.</p> -->
 
 
                                 </div>
@@ -283,7 +297,6 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
             </div>
         </div>
     </div>
-    <!-- Portfolio item 3 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -293,18 +306,14 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
-
                                 <img class="img-fluid d-block mx-auto" draggable="false" src="assets/img/portfolio/3.jpg" alt="..." />
                                 <div class="textportfolio">
                                     <h1 class="text">Aquora</h1>
                                     <p class="item-intro text-muted">Brand Identity System for a Beverage Brand</p>
-                                    <!-- <h5 class="text">Projektübersicht</h5> -->
                                     <p>Dieses Projekt beschäftigt sich mit der Entwicklung einer ganzheitlichen
                                         Markenidentität für eine Trinkwassermarke mit Fokus auf visuelle Klarheit,
                                         Differenzierung im Markt und konsistente Kommunikation über alle
                                         Berührungspunkte hinweg.</p>
-                                    <!-- <h5 class="text">Zielsetzung</h5> -->
                                     <p>Ziel war die Entwicklung eines visuellen Systems, das nicht nur als Logo oder
                                         Verpackung funktioniert, sondern als vollständige visuelle Sprache der Marke.
                                         Dieses System ist auf Packaging, digitale Plattformen und Marketingmaterialien
@@ -338,7 +347,7 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
                                     <p>Das finale Identitätssystem funktioniert als einheitliche visuelle Struktur über
                                         alle Kanäle hinweg:</p>
                                     <ul>
-                                        <li>Logodesign basierend auf Einfachheit und Naturkonzepten</li>
+                                        <li>Logodesign basierend on Einfachheit und Naturkonzepten</li>
                                         <li>Verpackungsdesign mit starker Fernwirkung im Regal</li>
                                         <li>Anwendung der Identität auf Transportmittel als Erweiterung der Marke</li>
                                         <li>UI Design für Web und Mobile mit Fokus auf Minimalismus</li>
@@ -370,8 +379,7 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
             </div>
         </div>
     </div>
-    <!-- Portfolio item 4 modal popup-->
-     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
@@ -380,18 +388,14 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
-
                                 <img class="img-fluid d-block mx-auto" draggable="false" src="assets/img/portfolio/4.jpg" alt="..." />
                                 <div class="textportfolio">
                                     <h1 class="text">PureBee</h1>
                                     <p class="item-intro text-muted">Brand Identity & Packaging Design</p>
-                                    <!-- <h5 class="text">Projektübersicht</h5> -->
                                     <p>PureBee ist eine Marke für 100% natürlichen Honig mit Fokus auf Qualität,
                                         Reinheit und natürliche Herkunft.
                                         Das Projekt umfasste die Entwicklung einer modernen visuellen Identität, die
                                         Vertrauen, Natur und Authentizität vermittelt.</p>
-                                    <!-- <h5 class="text">Zielsetzung</h5> -->
                                     <p>Ziel des Projekts war die Erstellung einer vollständigen Markenidentität, die das
                                         Produkt im Markt hervorhebt und ein hochwertiges, premium Image für ein
                                         Naturprodukt schafft.</p>
@@ -435,55 +439,20 @@ Die Herausforderung bestand darin, eine Identität zu entwickeln, die sich klar 
             </div>
         </div>
     </div>
-    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <script>
-    // Disable right click
-    document.addEventListener('contextmenu', e => {
-        e.preventDefault();
-    });
-
-    // Disable drag images
-    document.addEventListener('dragstart', e => {
-        e.preventDefault();
-    });
-
-    // Disable copy
-    document.addEventListener('copy', e => {
-        e.preventDefault();
-    });
-
-    // Disable common shortcuts
+    <!-- <script>
+    document.addEventListener('contextmenu', e => { e.preventDefault(); });
+    document.addEventListener('dragstart', e => { e.preventDefault(); });
+    document.addEventListener('copy', e => { e.preventDefault(); });
     document.addEventListener('keydown', e => {
-
-        // Ctrl+C
-        if (e.ctrlKey && e.key.toLowerCase() === 'c') {
-            e.preventDefault();
-        }
-
-        // Ctrl+S
-        if (e.ctrlKey && e.key.toLowerCase() === 's') {
-            e.preventDefault();
-        }
-
-        // Ctrl+U
-        if (e.ctrlKey && e.key.toLowerCase() === 'u') {
-            e.preventDefault();
-        }
-
-        // F12
-        if (e.key === 'F12') {
-            e.preventDefault();
-        }
+        if (e.ctrlKey && e.key.toLowerCase() === 'c') e.preventDefault();
+        if (e.ctrlKey && e.key.toLowerCase() === 's') e.preventDefault();
+        if (e.ctrlKey && e.key.toLowerCase() === 'u') e.preventDefault();
+        if (e.key === 'F12') e.preventDefault();
     });
-</script>
+</script> -->
 </body>
 
 </html>
